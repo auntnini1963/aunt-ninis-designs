@@ -1,0 +1,10 @@
+const checkoutId = 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMTgyMTc3ODc1OTI='; // ID of an existing checkout
+const lineItemIdsToRemove = [
+  'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzc4NTc5ODkzODQ='
+];
+
+// Remove an item from the checkout
+client.checkout.removeLineItems(checkoutId, lineItemIdsToRemove).then((checkout) => {
+  // Do something with the updated checkout
+  console.log(checkout.lineItems); // Checkout with line item 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzc4NTc5ODkzODQ=' removed
+});
