@@ -1,0 +1,5 @@
+// Create an empty checkout
+client.checkout.create().then((checkout) => {
+  // Do something with the checkout
+  console.log(checkout);
+});
