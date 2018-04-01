@@ -1,0 +1,6 @@
+const checkoutId = '2U4NWNkYzI4ZWEyOTdlOD9rZXk9MDVjMzY3Zjk3YWM0YWJjNGRhMTkwMDgwYTUzOGJmYmI='
+
+client.checkout.fetch(checkoutId).then((checkout) => {
+  // Do something with the checkout
+  console.log(checkout);
+});
