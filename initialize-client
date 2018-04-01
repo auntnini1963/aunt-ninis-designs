@@ -1,0 +1,6 @@
+import Client from 'shopify-buy';
+
+const client = Client.buildClient({
+  domain: 'aunt-ninis-designs.myshopify.com',
+  storefrontAccessToken: '0a8f328a800f413e7db21bdb9f9aea8d'
+});
